@@ -5,13 +5,14 @@
 }
 
 .navbar{
-    height: 45px;    
+    height: 45px;   
 }
 
 .navbar ul{
     list-style-type: none;
-    background-color: #ce4257;
+
     overflow: hidden;
+    border-radius: 10px;
 }
 
 .navbar a{
@@ -38,5 +39,5 @@
 }
 
 .home_page{
-    background-color: black;
+    background: linear-gradient(to right, #22223b, #4a4e69);
 }
