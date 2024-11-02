@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul{
+    list-style-type: none;
+    background-color: #ce4257;
+    overflow: hidden;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+.navbar a:hover{
+    background-color: black;
+    cursor: pointer;
+}
+
+.navbar li{
+    float: right;
+}
+
+.logo{
+    position: absolute;
+    font-size: 16px;
+}
