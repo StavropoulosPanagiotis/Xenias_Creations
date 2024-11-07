@@ -60,6 +60,8 @@
     background: #191717;
 }
 
-#hero h1{
-    text-align: center;
+#hero h2{
+    color: #F0F0F0;
+    font-size: 30px;
+    font-family: 'Brush Script MT', cursive;
 }
