@@ -52,7 +52,6 @@
 #hero{
     height: 80vh;
     width: 100%;
-    padding: 0 80px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -60,8 +59,64 @@
     background: #191717;
 }
 
-#hero h2{
-    color: #F0F0F0;
-    font-size: 30px;
-    font-family: 'Brush Script MT', cursive;
+#hero h2.firstLine {
+    font-weight: 700;
+    text-align: center;
+    font-size: 20px;
+    font-family: Hack, sans-serif;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #000, #fff, #000);
+    letter-spacing: 5px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    position: relative;
+    animation: shine 15s linear 1; /* 1 iteration */
+}
+
+#hero h2.secondLine {
+    font-weight: 700;
+    text-align: center;
+    font-size: 20px;
+    font-family: Hack, sans-serif;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #000, #fff, #000);
+    letter-spacing: 5px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    position: relative;
+    animation: shine 15s linear 1;
+    animation-delay: 15s; /* Start after the first line ends */
+}
+
+#hero h2.thirdLine {
+    font-weight: 700;
+    text-align: center;
+    font-size: 20px;
+    font-family: Hack, sans-serif;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #000, #fff, #000);
+    letter-spacing: 5px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    position: relative;
+    animation: shine 15s linear 1;
+    animation-delay: 30s; /* Start after the second line ends */
+}
+
+@keyframes shine {
+    0% {
+        background-position-x: -500%;
+    }
+    100% {
+        background-position-x: 500%;
+    }
 }
