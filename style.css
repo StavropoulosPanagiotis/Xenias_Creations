@@ -37,7 +37,8 @@
     color: #6c757d;
 }
 
-#navbar li a.active::after{
+#navbar li a.active::after,
+#navbar li a:hover::after{
     content: "";
     width: 30%;
     height: 2px;
